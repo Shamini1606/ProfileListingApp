@@ -1,0 +1,25 @@
+/* src/components/ProfileCard.css */
+
+.card {
+  transition: transform 0.2s; /* Smooth transition for hover effect */
+  border: 1px solid #ddd; /* Light border around the card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Scale up the card on hover */
+}
+
+.card-img-top {
+  border-radius: 8px 8px 0 0; /* Rounded corners for the top image */
+}
+
+.card-title {
+  font-size: 1.25rem; /* Increase font size for the title */
+  margin-bottom: 10px; /* Space below the title */
+}
+
+.btn {
+  margin-top: 10px; /* Space above the button */
+}

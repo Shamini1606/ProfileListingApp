@@ -1,0 +1,70 @@
+/* src/pages/ProfileListing.css */
+
+body {
+  background: linear-gradient(135deg, #d6b912, #9ae504);
+  margin: 0; /* Remove default margin */
+  font-family: Arial, sans-serif; /* Set a default font for the page */
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.input-search {
+  margin-bottom: 20px;
+  border: 1px solid #007bff; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Padding inside the input */
+  color: #333; /* Text color */
+  background-color: #ffffff; /* White background for the input */
+  transition: border-color 0.2s; /* Smooth transition for border color */
+}
+
+.input-search::placeholder {
+  color: #aaa; /* Placeholder text color */
+}
+
+.input-search:focus {
+  border-color: #0056b3; /* Darker blue on focus */
+  outline: none; /* Remove default outline */
+  background-color: #f0f8ff; /* Light blue background on focus */
+}
+
+.card {
+  transition: transform 0.2s;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #60a6b0, #2fe657);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  color: #333;
+}
+
+.card-text {
+  color: #555;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination .btn {
+  margin: 0 5px;
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+}
+
+.pagination .btn:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}

@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import "./ProfileDetailsPage.css";
 
 const ProfileDetailsPage = () => {
   const { id } = useParams();
@@ -12,8 +13,9 @@ const ProfileDetailsPage = () => {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
+        // Change the API endpoint to the new one
         const response = await axios.get(
-          `https://backend.graycorp.io:9000/mymate/api/v1/tempClients/${id}`
+          `https://jsonplaceholder.typicode.com/users/${id}`
         );
         setProfile(response.data);
       } catch (err) {
@@ -34,17 +36,21 @@ const ProfileDetailsPage = () => {
       {profile && (
         <div className="card">
           <img
-            src={profile.picture}
+            src={`https://via.placeholder.com/150`} // Placeholder image
             alt={profile.name}
             className="card-img-top"
           />
           <div className="card-body">
             <h5 className="card-title">{profile.name}</h5>
             <p className="card-text">
-              <strong>Contact Number:</strong> {profile.contactNumber}
+              <strong>Email:</strong> {profile.email}
             </p>
             <p className="card-text">
-              <strong>Location:</strong> {profile.location}
+              <strong>Phone:</strong> {profile.phone}
+            </p>
+            <p className="card-text">
+              <strong>Location:</strong> {profile.address.city},{" "}
+              {profile.address.street}
             </p>
           </div>
         </div>

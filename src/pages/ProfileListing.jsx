@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProfiles } from "../store/profilesSlice";
 import ProfileCard from "../components/ProfileCard";
+import { motion } from "framer-motion"; // Ensure this import is present
+import "./ProfileListing.css";
 
 const ProfileListing = () => {
   const dispatch = useDispatch();
@@ -41,28 +43,26 @@ const ProfileListing = () => {
         onChange={(e) => setSearchTerm(e.target.value)}
       />
       <div className="row">
-        {currentProfiles.map((profile) => (
-          //   <motion.div
-          //     className="col-12 col-sm-6 col-md-4 mb-4"
-          //     key={profile.id}
-          //     initial={{ opacity: 0, y: 20 }} // Start slightly below and transparent
-          //     animate={{ opacity: 1, y: 0 }} // Animate to full opacity and original position
-          //     exit={{ opacity: 0, y: -20 }} // Animate out
-          //     transition={{ duration: 0.5 }} // Duration of the animation
-          //   >
-          //     <ProfileCard profile={profile} />
-          //   </motion.div>
-          <motion.div
-            className="col-2 col-sm-6 col-md-4 mb-4"
-            key={profile.id}
-            initial={{ opacity: 0, y: 20 }} // Start slightly below and transparent
-            animate={{ opacity: 1, y: 0 }} // Animate to full opacity and original position
-            exit={{ opacity: 0, y: -20 }} // Animate out
-            transition={{ duration: 0.5 }} // Duration of the animation
-          >
-            <ProfileCard profile={profile} />
-          </motion.div>
-        ))}
+        {currentProfiles.length > 0 ? (
+          currentProfiles.map((profile) => (
+            <motion.div
+              className="col-12 col-sm-6 col-md-4 mb-4"
+              key={profile.id}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.5 }}
+            >
+              <ProfileCard profile={profile} />
+            </motion.div>
+          ))
+        ) : (
+          <div className="col-12 text-center">
+            <p className="text-danger">
+              No profiles found matching your search.
+            </p>
+          </div>
+        )}
       </div>
       <div className="pagination">
         {Array.from({ length: totalPages }, (_, index) => (
