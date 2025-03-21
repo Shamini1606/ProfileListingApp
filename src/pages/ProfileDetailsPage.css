@@ -5,53 +5,53 @@
 }
 
 .card {
-  margin: 0 auto; /* Center the card */
-  max-width: 600px; /* Set a maximum width for the card */
-  border: 1px solid #ddd; /* Light border around the card */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  background-color: #ffffff; /* White background for the card */
+  margin: 0 auto;
+  max-width: 600px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
 }
 
 .card-img-top {
-  border-radius: 50%; /* Make the image circular */
-  width: 150px; /* Set a fixed width for the image */
-  height: 150px; /* Set a fixed height for the image */
-  object-fit: cover; /* Ensure the image covers the area */
-  border: 3px solid #007bff; /* Blue border around the image */
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid #007bff;
 }
 
 .card-body {
-  text-align: center; /* Center the text in the card body */
-  padding: 20px; /* Add padding inside the card body */
+  text-align: center;
+  padding: 20px;
 }
 
 .card-title {
-  font-size: 1.5rem; /* Increase the font size of the title */
-  margin-bottom: 10px; /* Add space below the title */
-  color: #333; /* Dark gray color for the title */
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
 }
 
 .card-text {
-  margin-bottom: 5px; /* Add space below each text item */
-  color: #555; /* Medium gray color for text */
+  margin-bottom: 5px;
+  color: #555;
 }
 
 .card-text strong {
-  color: #007bff; /* Blue color for strong text (labels) */
+  color: #007bff;
 }
 
 .text-danger {
-  text-align: center; /* Center error messages */
-  color: red; /* Set the color for error messages */
+  text-align: center;
+  color: red;
 }
 
 .btn-primary {
-  background-color: #007bff; /* Bootstrap primary color */
-  border-color: #007bff; /* Border color for the button */
+  background-color: #007bff;
+  border-color: #007bff;
 }
 
 .btn-primary:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-  border-color: #0056b3; /* Darker border on hover */
+  background-color: #0056b3;
+  border-color: #0056b3;
 }

@@ -1,9 +1,9 @@
 /* src/pages/ProfileListing.css */
 
 body {
-  background: linear-gradient(135deg, #d6b912, #9ae504);
-  margin: 0; /* Remove default margin */
-  font-family: Arial, sans-serif; /* Set a default font for the page */
+  background: linear-gradient(135deg, #9d9b91, #ebf1dd);
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 .container {
@@ -12,22 +12,22 @@ body {
 
 .input-search {
   margin-bottom: 20px;
-  border: 1px solid #007bff; /* Border color */
-  border-radius: 5px; /* Rounded corners */
-  padding: 10px; /* Padding inside the input */
-  color: #333; /* Text color */
-  background-color: #ffffff; /* White background for the input */
-  transition: border-color 0.2s; /* Smooth transition for border color */
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  padding: 10px;
+  color: #333;
+  background-color: #ffffff;
+  transition: border-color 0.2s;
 }
 
 .input-search::placeholder {
-  color: #aaa; /* Placeholder text color */
+  color: #aaa;
 }
 
 .input-search:focus {
-  border-color: #0056b3; /* Darker blue on focus */
-  outline: none; /* Remove default outline */
-  background-color: #f0f8ff; /* Light blue background on focus */
+  border-color: #0056b3;
+  outline: none;
+  background-color: #f0f8ff;
 }
 
 .card {
