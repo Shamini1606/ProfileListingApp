@@ -20,12 +20,3 @@ This is a profile listing application built with React, Redux Toolkit, and Frame
 - Bootstrap
 - Axios
 
-## Project Setup Instructions
-
-To run this project locally, follow these steps:
-
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/yourusername/profile-listing-app.git
-   cd profile-listing-app
-   ```
